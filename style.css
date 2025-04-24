@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.active {
+  background-color: red;
+  color: white;
+}
+
+#container {
+  position: relative;
+  display: inline-block;
+}
+
+#target {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+
+.tomato {
+  position: absolute;
+  width: 150px;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+#message {
+  position: absolute;
+  top: 40%;
+  left: 130%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: red;
+  display: none;
+}
+
+.insult-message {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  pointer-events: none;
+}
